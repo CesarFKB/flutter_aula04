@@ -1,5 +1,6 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_aula04/container_el.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -30,11 +31,10 @@ class _HomePageState extends State<HomePage> {
                     constraints: BoxConstraints.tight(const Size.fromRadius(150)),
                     alignment: Alignment.center,
                     color: const Color.fromARGB(100, 172, 172, 172),
-                    child: ListView(
-                      children: const [
-                        Icon(Icons.add_circle, color: Colors.white, fill: 1),
-                      ],
-                    ),
+                    child: Container(
+                      alignment: Alignment.center,
+                      height: 70,
+                      child: const ContainerEl(),)
                   ),
                 )
               ),
