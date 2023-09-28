@@ -30,7 +30,11 @@ class _HomePageState extends State<HomePage> {
                     constraints: BoxConstraints.tight(const Size.fromRadius(150)),
                     alignment: Alignment.center,
                     color: const Color.fromARGB(100, 172, 172, 172),
-                    child: const Icon(Icons.add_circle),
+                    child: ListView(
+                      children: const [
+                        Icon(Icons.add_circle, color: Colors.white, fill: 1),
+                      ],
+                    ),
                   ),
                 )
               ),
